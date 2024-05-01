@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #main {
+        width: 50%;
+        height: 98vh;
+        margin: 16px auto;
+      }
+      #box1 {
+        display: flex;
+        flex-direction: row;
+      }
+      #one {
+        width: 13%;
+        height: 12vh;
+        background-color: #aadba4;
+      }
+      #two {
+        width: 13%;
+        height: 12vh;
+        background-color: green;
+      }
+      #img1 {
+        height: 10vh;
+        position: absolute;
+        top: 25px;
+        right: 347px;
+        mix-blend-mode: multiply;
+      }
+      #img2 {
+        height: 9vh;
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: 25px;
+        left: 603px;
+      }
+      #img3 {
+        height: 8vh;
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: 30px;
+        left: 439px;
+      }
+      #img4 {
+        height: 10vh;
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: 106px;
+        left: 686px;
+      }
+      #img5 {
+        height: 8vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 106px;
+        left: 354px;
+      }
+      #img6 {
+        height: 9vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 106px;
+        left: 435px;
+      }
+      #img7 {
+        height: 8vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 106px;
+        left: 527px;
+      }
+      #img8 {
+        height: 9vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 25px;
+        left: 518px;
+      }
+      #img9 {
+        height: 10vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 27px;
+        left: 350px;
+      }
+      #img10 {
+        height: 9vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 25px;
+        left: 689px;
+      }
+      #img11 {
+        height: 11vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 23px;
+        left: 852px;
+      }
+      #img12 {
+        height: 9vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 106px;
+        left: 859px;
+      }
+      #img13 {
+        height: 8vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 28px;
+        left: 780px;
+      }
+      #img14 {
+        height: 10vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 106px;
+        left: 602px;
+      }
+      #img15 {
+        height: 9vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 106px;
+        left: 774px;
+      }
+      #img16 {
+        height: 9vh;
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 106px;
+        left: 943px;
+      }
+      #img01 {
+        height: 10vh;
+        position: absolute;
+        top: 571px;
+        right: 513px;
+        mix-blend-mode: plus-lighter;
+      }
+      #img02 {
+        height: 10vh;
+        position: absolute;
+        top: 591px;
+        right: 513px;
+        mix-blend-mode: plus-lighter;
+      }
+      #img03 {
+        height: 10vh;
+        position: absolute;
+        top: 571px;
+        right: 513px;
+        mix-blend-mode: plus-lighter;
+      }
+      #img01 {
+        height: 10vh;
+        position: absolute;
+        top: 484px;
+        right: 526px;
+        mix-blend-mode: lighten;
+      }
+      #img02 {
+        height: 10vh;
+        position: absolute;
+        top: 484px;
+        right: 599px;
+        mix-blend-mode: color-dodge;
+      }
+      #img03 {
+        height: 10vh;
+        position: absolute;
+        top: 561px;
+        right: 681px;
+        mix-blend-mode: color-dodge;
+      }
+      #img04 {
+        height: 10vh;
+        position: absolute;
+        top: 561px;
+        right: 444px;
+        mix-blend-mode: lighten;
+      }
+      #img05 {
+        height: 10vh;
+        position: absolute;
+        top: 561px;
+        right: 513px;
+        mix-blend-mode: plus-lighter;
+      }
+      #img06 {
+        height: 11vh;
+        mix-blend-mode: lighten;
+        position: absolute;
+        top: 557px;
+        left: 355px;
+      }
+      #img07 {
+        height: 9vh;
+        mix-blend-mode: color-dodge;
+        position: absolute;
+        top: 486px;
+        left: 349px;
+      }
+      #img08 {
+        height: 9vh;
+        mix-blend-mode: color-dodge;
+        position: absolute;
+        top: 485px;
+        left: 518px;
+      }
+      #img09 {
+        height: 10vh;
+        position: absolute;
+        top: 560px;
+        right: 346px;
+        mix-blend-mode: plus-lighter;
+      }
+      #img010 {
+        height: 10vh;
+        position: absolute;
+        top: 560px;
+        right: 611px;
+        mix-blend-mode: lighten;
+      }
+      #img011 {
+        height: 10vh;
+        position: absolute;
+        top: 480px;
+        right: 852px;
+        mix-blend-mode: plus-lighter;
+      }
+      #img012 {
+        height: 9vh;
+        mix-blend-mode: color-dodge;
+        position: absolute;
+        top: 564px;
+        left: 437px;
+      }
+      #img013 {
+        height: 10vh;
+        position: absolute;
+        top: 484px;
+        right: 432px;
+        mix-blend-mode: plus-lighter;
+      }
+      #img014 {
+        height: 10vh;
+        mix-blend-mode: plus-lighter;
+        position: absolute;
+        top: 483px;
+        left: 614px;
+      }
+      #img015 {
+        height: 10vh;
+        position: absolute;
+        top: 484px;
+        right: 358px;
+        mix-blend-mode: plus-lighter;
+      }
+      #img016 {
+        height: 10vh;
+        position: absolute;
+        top: 557px;
+        right: 777px;
+        mix-blend-mode: plus-lighter;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="box1">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+      </div>
+      <div id="pic">
+        <img id="img1" src="./images/download.jpg" alt="" />
+        <img id="img2" src="./images/black03.jpg" alt="" />
+        <img id="img3" src="./images/black2.jpg" alt="" />
+        <img id="img4" src="./images/download.jpg" alt="" />
+        <img id="img5" src="./images/black2.jpg" alt="" />
+        <img id="img6" src="./images/black03.jpg" alt="" />
+        <img id="img7" src="./images/black4.png" alt="" />
+        <img id="img8" src="./images/black5.jpg" alt="" />
+        <img id="img9" src="./images/black8.jpg" alt="" />
+        <img id="img10" src="./images/black2.jpg" alt="" />
+        <img id="img11" src="./images/black8.jpg" alt="" />
+        <img id="img12" src="./images/black03.jpg" alt="" />
+        <img id="img13" src="./images/black4.png" alt="" />
+        <img id="img14" src="./images/black8.jpg" alt="" />
+        <img id="img15" src="./images/black5.jpg" alt="" />
+        <img id="img16" src="./images/black5.jpg" alt="" />
+      </div>
+      <div id="box1">
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+      </div>
+      <div id="box1">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+      </div>
+      <div id="box1">
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+      </div>
+      <div id="box1">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+      </div>
+      <div id="box1">
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+      </div>
+      <div id="box1">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+      </div>
+      <div id="pic">
+        <img id="img01" src="./images/w4.jpg" alt="" />
+        <img id="img02" src="./images/w7.png" alt="" />
+        <img id="img03" src="./images/w7.png" alt="" />
+        <img id="img04" src="./images/w4.jpg" alt="" />
+        <img id="img05" src="./images/w7.png" alt="" />
+        <img id="img06" src="./images/w4.jpg" alt="" />
+        <img id="img07" src="./images/w7.png" alt="" />
+        <img id="img08" src="./images/w7.png" alt="" />
+        <img id="img09" src="./images/w7.png" alt="" />
+        <img id="img010" src="./images/w4.jpg" alt="" />
+        <img id="img011" src="./images/w7.png" alt="" />
+        <img id="img012" src="./images/w7.png" alt="" />
+        <img id="img013" src="./images/w7.png" alt="" />
+        <img id="img014" src="./images/w4.jpg" alt="" />
+        <img id="img015" src="./images/w4.jpg" alt="" />
+        <img id="img016" src="./images/w4.jpg" alt="" />
+      </div>
+      <div id="box1">
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one"></div>
+      </div>
+    </div>
+  </body>
+</html>
